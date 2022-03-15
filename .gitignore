@@ -1,50 +1,69 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# MacOS desktop services store files
+.DS_Store*
 
-# Folder config file
-Desktop.ini
+# JetBrains IDE project files (e.g. PyCharm)
+.idea
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# VSCode IDE project files (e.g. PyCharm)
+.vscode
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Environments
+myvenv/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# Windows shortcuts
-*.lnk
+# Python binary artifacts we generally never want to check in.
+*.pyc
+__pycache__/
 
-# =========================
-# Operating System Files
-# =========================
+# Artifacts from coverage
+cover/
+.coverage
+htmlcov/
 
-# OSX
-# =========================
+# mypy cache
+.mypy_cache
 
-.DS_Store
-.AppleDouble
-.LSOverride
+#pytest cache
+.pytest_cache
 
-# Thumbnails
-._*
+# Build artifacts
+dist/
+build/
+.eggs/
+*.egg-info/
+*.whl
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
+# Typical root venv dir
+venv/
+.env/
 
+# Terraform temporary files
+.terraform/
+*.tfstate*
 
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
+# vim, emacs swap files
+.*.s??
+*~
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# sphinx sources we generally don't want to add
+altimeter*.rst
+modules.rst
+doc/html/**/*
+public/**
+
+# tox
+.tox/
+
+# misc
+
+*.hyper
+*.log
+postgres_docker_container.id
+*.prof
 
